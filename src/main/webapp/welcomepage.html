@@ -241,58 +241,7 @@
 			 color: aqua;
 		}
 		
-		.navbar-toggle {
-		    background: none;
-		    border: none;
-		    cursor: pointer;
-		    padding: 10px;
-		    margin-right: 10px; /* Adjust margin as needed */
-		    display: none; /* Initially hide on larger screens */
-		}
-		
-		.toggle-icon {
-		    width: 25px;
-		    height: 3px;
-		    background-color: #fff;
-		    display: block;
-		    transition: background-color 0.3s ease;
-		}
-		
-		.toggle-icon::before,
-		.toggle-icon::after {
-		    content: '';
-		    width: 25px;
-		    height: 3px;
-		    background-color: #fff;
-		    display: block;
-		    transition: transform 0.3s ease, background-color 0.3s ease;
-		}
-		
-		.toggle-icon::before {
-		    transform: translateY(-8px);
-		}
-		
-		.toggle-icon::after {
-		    transform: translateY(5px);
-		}
-
-
-		@media screen and (max-width: 768px) {
-		    .navbar-toggle {
-		        display: block; /* Show on smaller screens */
-		    }
-		
-		    .navbar {
-		        display: none; /* Hide the nav links by default on smaller screens */
-		    }
-		
-		    .navbar.active {
-		        display: flex; /* Show the nav links when .active is applied */
-		        flex-direction: column;
-		    }
-		}
-
-
+	
 		
 	</style>
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -349,10 +298,18 @@
 		
 	</section>
 	
-	
-	
-	
-	<script src="script.js"></script>	
+	<script>
+		
+		var typed = new Typed(".multiple-text" ,{
+			strings: ["Frontend Developer" , "Backend Developer" , "Database administrator" , "Database development"],
+			typeSpeed:100,
+			backSpeed:100,
+			backDelay:1000,
+			loop: true
+		})
+	</script>
+		
+	<!--<script src="script.js"></script>-->
 </body>		
 </html>
 
